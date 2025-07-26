@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f7f7f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,61 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.expense-tracker{
+  background-color: #ffffff;
+  padding: 20px;
+  color: #363636;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  padding: 10px;
+  background-color: #05582a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #053600;
+}
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.view-expense {
+  background-color: #ffffff;
+  padding: 20px;
+  color: #363636;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.view-expense h2 {
+  margin-bottom: 20px;
+}
+.view-expense ul {
+  list-style: none;
+  padding: 0;
+}
+.view-expense li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
 }
