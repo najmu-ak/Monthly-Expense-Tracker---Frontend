@@ -1,14 +1,13 @@
-import  {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-
 function ViewExpense() {
-    const [expenses , setExpenses] = useState([]);
+    const [expenses, setExpenses] = useState([]);
 
     useEffect(() => {
         axios.get("http://localhost:8080/api/expense/all")
             .then(response => setExpenses(response.data))
             .catch(() => alert("Error fetching expenses"));
-    },[]);
+    }, []);
 
     return (
         <div className="view-expense">
