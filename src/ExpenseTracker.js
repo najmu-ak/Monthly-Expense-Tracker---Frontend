@@ -28,7 +28,7 @@ function ExpenseTracker() {
     return (
         <div className="expense-tracker">
             <form onSubmit={handleSubmit}>
-                <h3>Monthly Expense Tracker </h3>
+                <h3>Daily Expense Tracker </h3>
                 <input type="date" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date" />
                 <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Amount" />
                 <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Category" />

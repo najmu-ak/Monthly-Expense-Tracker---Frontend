@@ -11,7 +11,7 @@ function ViewExpense() {
 
     return (
         <div className="view-expense">
-            <h3>View Expenses</h3>
+            <h3>View All Expenses</h3>
             <table>
                 <thead>
                     <tr>
