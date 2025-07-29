@@ -10,7 +10,8 @@ function App() {
     <Router>
       <h1 style={{color: "#363636"}}>Expense Tracker Application</h1>
       <nav>
-        <Link to="/addExpense"><button>Add Expense</button></Link> <b style={{color:"#363636"}}>|</b> <Link to="/ViewExpense"><button>View Expenses</button></Link>
+        <Link to="/"><button className='btn btn-success'>Home</button></Link> |
+        <Link to="/addExpense"><button className='btn btn-success'>Add Expense</button></Link> |<Link to="/ViewExpense"><button className='btn btn-success'>View Expenses</button></Link>
       </nav>
       <br />
       

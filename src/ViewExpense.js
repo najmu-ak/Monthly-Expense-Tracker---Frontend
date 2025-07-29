@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 function ViewExpense() {
     const [expenses, setExpenses] = useState([]);
 
@@ -11,8 +13,9 @@ function ViewExpense() {
 
     return (
         <div className="view-expense">
-            <h3>View All Expenses</h3>
-            <table>
+            <h2 style={{ color: 'black' }}>Expense History</h2>
+
+            <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th>Date</th>
@@ -23,7 +26,7 @@ function ViewExpense() {
                 </thead>
                 <tbody>
                     {expenses.map((expense, index) => (
-                        <tr key={index}>
+                        <tr style={{ backgroundColor: "#f2f2f2" }} key={index}>
                             <td>{expense.date}</td>
                             <td>{expense.amount}</td>
                             <td>{expense.category}</td>
