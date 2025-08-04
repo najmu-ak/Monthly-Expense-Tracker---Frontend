@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-function ExpenseTracker({expenses, setExpenses}) {
+function AddExpense({ expenses, setExpenses }) {
   const [date, setDate] = useState("");
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("");
@@ -21,18 +21,6 @@ function ExpenseTracker({expenses, setExpenses}) {
   }
 
   return (
-    // <div className="expense-tracker">
-    //     <form onSubmit={handleSubmit}>
-    //         <h3>Daily Expense Tracker</h3>
-    //         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date" />
-    //         <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Amount" />
-    //         <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Category" />
-    //         <input type="text" value={note} onChange={(e) => setNote(e.target.value)} placeholder="Note" />
-    //         <br />
-    //         <button type="submit">Add Expense</button>
-    //     </form>
-    // </div>
-
     <div className="container">
       <div className="card p-4 shadow">
         <h3 className="text-center">Daily Expense Tracker</h3>
@@ -49,4 +37,4 @@ function ExpenseTracker({expenses, setExpenses}) {
   );
 }
 
-export default ExpenseTracker;
+export default AddExpense;
