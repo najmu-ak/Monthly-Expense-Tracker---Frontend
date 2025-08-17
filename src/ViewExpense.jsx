@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 
+
 function ViewExpense() {
     const [expenses, setExpenses] = useState([]);
     const [category, setCategory] = useState("");
@@ -62,7 +63,7 @@ function ViewExpense() {
         <div className="view-expense">
             <h2 style={{ color: "black" }}>Expense History</h2>
             <h4 className="text-start mt-3">
-                Total: <span className="text-success">Rs.{totalAmount}</span>
+                Total: <span className="text-danger">Rs.{totalAmount}</span>
             </h4>
 
             {/* Filter Section */}
@@ -99,7 +100,7 @@ function ViewExpense() {
                     <option value="11">November</option>
                     <option value="12">December</option>
                 </select>
-                <button className="btn btn-success" onClick={handleFilter}>
+                <button className="btn btn-dark" onClick={handleFilter}>
                     Filter
                 </button>
             </div>
@@ -125,7 +126,7 @@ function ViewExpense() {
                                 <td>
                                     {/* Edit Icon */}
                                     <i
-                                        className="bi bi-pencil-fill btn btn-success btn-sm me-2"
+                                        className="bi bi-pencil-fill btn btn-dark btn-sm me-2"
                                         onClick={() => {
                                             const updatedExpense = {
                                                 ...expense,

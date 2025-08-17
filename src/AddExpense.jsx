@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
+
 function AddExpense({ expenses, setExpenses }) {
   const [date, setDate] = useState("");
   const [amount, setAmount] = useState("");
@@ -29,7 +30,8 @@ function AddExpense({ expenses, setExpenses }) {
           <input className="form-control mb-3" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Amount" required />
           <input className="form-control mb-3" type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Category" required />
           <input className="form-control mb-3" type="text" value={note} onChange={(e) => setNote(e.target.value)} placeholder="Note" />
-          <button className="btn btn-success w-100">Add Expense</button>
+          
+          <button className="btn btn-dark w-100">Add Expense</button>
         </form>
       </div>
     </div>
